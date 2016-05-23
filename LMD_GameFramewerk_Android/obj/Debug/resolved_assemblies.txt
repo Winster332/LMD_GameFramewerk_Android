@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\LMD_GameFramewerk_Android.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\Box2DX.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\mscorlib.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\System.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\System.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\System.Xml.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\LMD_GameFramewerk_Android\LMD_GameFramewerk_Android\obj\Debug\assemblies\System.ServiceModel.Internals.dll

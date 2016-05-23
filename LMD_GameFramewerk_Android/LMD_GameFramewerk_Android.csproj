@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E4930BB-06E2-4206-AD0B-FA4FCDA69CF8}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMD_GameFramewerk_Android</RootNamespace>
+    <AssemblyName>LMD_GameFramewerk_Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Box2DX">
+      <HintPath>E:\Libary programs\Box2D\Box2DX.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameEngine\Windows\ScreenStart.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GAudio.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GCamera.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GFileIO.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GGame.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GGraphics.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GInput.cs" />
+    <Compile Include="GameFramewerk\BaseGame\GSystemParticles.cs" />
+    <Compile Include="GameFramewerk\BaseGame\Physics\GPhysics.cs" />
+    <Compile Include="GameFramewerk\BaseGame\Physics\InfoBody.cs" />
+    <Compile Include="GameFramewerk\BaseGame\Physics\Solver.cs" />
+    <Compile Include="GameFramewerk\IAudio.cs" />
+    <Compile Include="GameFramewerk\ICamera.cs" />
+    <Compile Include="GameFramewerk\IFileIO.cs" />
+    <Compile Include="GameFramewerk\IGame.cs" />
+    <Compile Include="GameFramewerk\IGraphics.cs" />
+    <Compile Include="GameFramewerk\IInput.cs" />
+    <Compile Include="GameFramewerk\IPhysics.cs" />
+    <Compile Include="GameFramewerk\ISystemParticles.cs" />
+    <Compile Include="GameFramewerk\Screen.cs" />
+    <Compile Include="GameFramewerk\UI\Animation\AnimationScale.cs" />
+    <Compile Include="GameFramewerk\UI\Animation\IAnimation.cs" />
+    <Compile Include="GameFramewerk\UI\Animation\IAnimationEvent.cs" />
+    <Compile Include="GameFramewerk\UI\BaseButton.cs" />
+    <Compile Include="GameFramewerk\UI\BaseUI.cs" />
+    <Compile Include="GameFramewerk\UI\CircleButton.cs" />
+    <Compile Include="GameFramewerk\UI\Image.cs" />
+    <Compile Include="GameFramewerk\UI\RectButton.cs" />
+    <Compile Include="GameFramewerk\UI\TypeTouch.cs" />
+    <Compile Include="GameFramewerk\Windows\Intent.cs" />
+    <Compile Include="GameFramewerk\Windows\ManagementScreen.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="ResourceGame.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGame.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ResourceGame.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGame.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_lmd.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+ -->
+</Project>
